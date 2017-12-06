@@ -1,0 +1,44 @@
+
+<html>
+<head>
+	<title>ARAYICI</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=">
+
+	<link rel="stylesheet" href="/CSS/jquery.mobile-1.4.5.min.css" />
+	<script src="/JS/jquery-1.11.1.min.js"></script>
+	<script src="JS/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>ARAMA</h1>
+	</div><!-- /header -->
+
+		<form>
+    <input id="filter-for-listview" data-type="search" placeholder="Bir kelime giriniz...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+    <li><a href="ankara.html" data-rel="dialog" data-transition="pop">ANKARA</a></li>
+    <li><a href="#">KONYA</a></li>
+    <li><a href="#">İSTANBUL</a></li>
+    <li><a href="#">ADANA</a></li>
+    <li><a href="#">BURSA</a></li>
+    <li><a href="#">STUTTGART</a></li>
+</ul>
+	</div>
+    <div data-role="page" id="city" class="demo-page" data-dom-cache="true" data-theme="b" data-prev="prevCity" data-next="nextCity" data-url="city">
+    <div role="main" class="ui-content">
+        <div id="trivia-city" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
+            <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
+            <p>Here some text.</p>
+        </div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
